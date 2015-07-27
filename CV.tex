@@ -1,0 +1,200 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gyorgy Farkas CV 
+% based on Wilson Resume/CV
+% XeLaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+ \documentclass[10pt]{article} % Default font size
+ \input{structure.tex} % Include the file specifying document layout
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{György Farkas -- Resume} % Print the main header
+
+%------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Address} \> Kolozsvari Tamas u. 4/B ,\\ % Address line 1
+\> Budapest, 1023 \\ % Address line 2
+\> Hungary \\
+{\bf Date of Birth} \> 6$^{th}$ June 1977 \\ % Date of birth 
+{\bf Nationality} \> Hungarian % Nationality
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Mobile Phone} \> +36 (70) 409 1848 \\ % Mobile phone
+{\bf Email} \> \href{mailto:gyfarkas@gmail.com}{gyfarkas@gmail.com} \\ % Email address
+\end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+
+\section{Personal Profile}
+I'm a developer with a background in mathematical and philosophical
+logic where I was mainly interested in the connections
+between mathematics, logic and language and in particular the various
+interconnections between lambda calculi, type theory, categories and
+the philosophy of mathematics.  This gave me a very early acquaintance
+with functional programming before it gained wide acceptance in industry and my interest and enthusiasm endures
+ever since.  
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\tabbedblock{
+\bf{2008-2012} \> BSc in Computer Science -\href{http://www.elte.hu}{Eotvos University, Budapest} \\
+\bf{1998-2004} \> MA in Philosophy \href{http://www.elte.hu}{Eotvos University, Budapest}
+
+}
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT HISTORY SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Employment History}
+
+\job
+{Jan 2011 -}{Present}
+{Dealogic}
+{http://www.dealogic.com}
+{ Developer / Technical Architect}
+{
+\begin{itemize-noindent}
+\item {As a technical architect I'm currently responsible for the
+  development of an excel plugin and web services that enables analysis over
+  the Dealogic data warehouse containing data of the last 25 years of
+  capital markets.}
+\item{Previously as a Developer in the R\&D group of the company we
+developed a search tool in F\# for the same data warehouse that was capable
+of interpreting natural language queries and transforming them to data
+queries. For this we used MS SQL Server Analysis Services
+Tabular Models and DAX language for which I wrote a LINQ provider in
+C\# and open sourced it on \href{linqtodax.codeplex.com}{linqtodax.codeplex.com}.}
+\end{itemize-noindent}
+  
+\rule{0mm}{5mm}\textbf{Technologies:} C\# F\# .Net 3.5-4.5. Rx.Net, VSTO, WebAPI and WCF, SSAS Tabular }
+
+%------------------------------------------------
+
+\job
+{Oct 2007 -}{Dec 2010}
+{Capsys - Capital Systems Inc.}
+{http://www.initech.com}
+{QA Analyst / Test Lead}
+{As a tester I was testing the pension fund administration software of
+the company and later lead the QA group responsible for that product
+using ISQTB structured testing methods and built basic automated data
+driven test suites.
+\rule{0mm}{5mm}\textbf{Technologies:} Informix DB, Excel VBA
+}
+
+\job{2006-}{2007}
+{Maholnap Foundation}
+{www.maholnap.hu}
+{Project assistant}
+{The foundation empowered smaller grass root initiatives/organisations to
+  access EU grants for their social activities helping
+  underprivileged people in Hungary }
+
+\job{2005-}{2006}
+{AITIA International Inc.}
+{www.aitia.ai}
+{Project Assistant}
+{AITIA is a small research driven enterprise and my duty was to help
+  in obtaining EU and national research grants for various R\&D projects}
+
+\job{2002-}{2004}
+{Feny-ESE Foundation}
+{http://www.egymast-segito.hu}
+{Volunteer and project assistant}
+{This foundation is a local NGO maintaining care institutions for
+  elderly and disabled people in the agglomeration of Budapest. I
+  helped them with maintaining their small IT infrastructure, making
+  small scripts and programs for their office needs and
+  occasional English translations}
+
+%----------------------------------------------------------------------------------------
+%	IT/COMPUTING SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Software Engineering Skills}
+
+\skillgroup{Certifications}
+{
+\textit{Microsoft certified solutions developer -  Web applications
+  (2014-2016) } \\
+\textit{ISQTB Certified tester - foundation level (2010) }
+}
+
+\skillgroup{Programming Languages}
+{
+\textit{C\#, F\#} - languages I used professionally \\
+\textit{Scala, C++} - languages in which I wrote non-trivial programs \\
+\textit{Julia, Python, R, Octave/MATLAB} - languages I used for minor machine learning exercises \\
+\textit{Haskell, Ocaml, Scheme} - functional languages I learnt, but not used
+in serious projects \\
+\textit{Idris, Coq and Rust} - Languages I'm studying at the moment \\
+}
+
+%------------------------------------------------
+
+\skillgroup{Development tools, frameworks}
+{
+\textit{HTML5, CSS3, JavaScript/jQuery} \\
+\textit{ASP.NET MVC, Scala Play, Spray (Akka Http)}  \\
+\textit{ xUnit, NUnit, QuickCheck, FSCheck, ScalaCheck} - testing
+frameworks \\
+\textit{SQL, Transact-SQL} - data definition and manipulation\\
+\textit{TFS, GIT} - source version control \\
+\textit{Visual Studio, Eclipse, IntelliJ Idea, Emacs} - IDEs 
+}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+\interestsgroup{
+\interest{Family, I have a 7 year old daughter and a 2 year old son}
+\interest{MOOCs, I've taken a number of courses on machine learning and programming languages}
+\interest{Books,Literature, Philosophy}
+\interest{Running, Cycling, Hiking}
+
+}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
